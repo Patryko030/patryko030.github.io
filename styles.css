@@ -109,7 +109,12 @@ footer {
     text-align: center;
     width: 100%;
     background-color: #d5e6f5;
+    border-top: 1px solid grey;
     color: #283970;
+}
+
+footer p {
+    color: red;
 }
 
 @media screen and (min-width: 600px) {

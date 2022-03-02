@@ -12,17 +12,19 @@
         <img src="https://picsum.photos/200/300?grayscale" alt="">
         <span> Write me a message</span> <!-- span is the inline element-->
         <span> Please do not spam me.</span>
-        <form>
+        <form onsubmit="return false">
             First name:
-            <input type="text" required>
+            <input name="first_name" type="text" required>
             Email:
-            <input type="email" required>
+            <input name="email" type="email" required>
             Message:
-            <textarea required cols="30" rows="5">
+            <textarea name="message" required cols="30" rows="5">
                 Your message
             </textarea>
             <input id="submit_button" type="submit" value="Submit">
         </form>
     </div>
+    <script src="scripts.js"></script>
+    <script src="testscripts.js"></script>
 </body>
 </html>
