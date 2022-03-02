@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #F5F2E7;
+}
+
 /* SIDEBARS STYLES */
 .column {
     float: left;
