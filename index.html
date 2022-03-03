@@ -1,63 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">
+    <link rel="stylesheet" href="/to-do-app/style.css">
+    <script src="https://kit.fontawesome.com/08c58a25de.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
-        <h1>Welcome to my first website!</h1>
-        <a href="/to-do-app/index.html">My First Page with To Do App</a>
+        <nav class="navigation">
+            <a class="nav-button home-page" href="/index.html">Home</a>
+            <a class="nav-button first-page" href="/to-do-app/first-page.html">Link to To Do App</a>
+            <a class="nav-button second-page" href="/to-do-app/second-page.html">Link to second page</a>
+            <a class="nav-button third-page " href="/to-do-app/third-page.html">Link to third page</a>
+        </nav>
     </header>
 
-    <div id="main-content">
-        <section id="articles">
-            <article>
-                <h3>This is my first blog post</h3>
-                <p>This is the content of my first blog post</p>
-            </article>
+    <!-- JUMBOTRON -->
 
-            <article>
-                <h3>This is my second blog post</h3>
-                <p>This is the content of my second blog post</p>
-            </article>
-
-            <article>
-                <h3>This is my third blog post</h3>
-                <p>This is the <mark>content</mark> of my third blog post
-                <br> Continue the content after <i>breakign line. <sup class="sup_element">*</sup></i></p>
-                <small><sup class="sup_element">*</sup> Another Sentence</small>
-            </article>
-        </section>
-
-        <div id="skills">
-            <table>
-                <caption>My skills</caption>
-                <tr>
-                    <th>Technology</th>
-                    <th>Level</th>
-                </tr>
-                <tr>
-                    <td>HTML</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>Good</td>
-                </tr>
-            </table>
+    <section class="jumbotron">
+        <h1>Welcome to my first website</h1>
+        <a href="#"></a>
+    </section>
+    <section class="flex-container">
+        <div class="column">
+            <i class="fa-solid fa-code fa-10x"></i>
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia tenetur aspernatur molestiae
+                consequuntur maiores.</p>
         </div>
-    </div>
-
+        <div class="column">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia tenetur aspernatur molestiae
+                consequuntur maiores.</p>
+        </div>
+        <div class="column">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia tenetur aspernatur molestiae
+                consequuntur maiores.</p>
+        </div>
+    </section>
     <footer>
-        <div>
-            Footer area. &copy; <strong>Me</strong> & <b>My Tutor</b>
+        <div class="footer">
+            <p>Footer &copy; Company name</p>
         </div>
     </footer>
-    <script src="scripts.js"></script>
+    <!-- <script src="public/js/taskslist.js"></script> -->
+    <!-- <script src="/to-do-app/public/js/new-task.js"></script> -->
 </body>
+
 </html>
