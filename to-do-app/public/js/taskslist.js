@@ -1,29 +1,37 @@
 
-const tasks = [
-    {"name":"Third task", "status":"to do"},
-    {"name":"Second task", "status":"to do"},
-    {"name":"First task", "status":"to do"}
-]
+// const tasks = [
+//     {"name":"Third task", "status":"to do"},
+//     {"name":"Second task", "status":"to do"},
+//     {"name":"First task", "status":"ready"}
+// ]
+if(localStorage.hasOwnProperty('to_do_tasks')) {
 
-tasks.map((task) => {
 
-    const tasks_list = document.getElementById("tasks-list")
-    const newTask = document.createElement("li")
-    newTask.innerText = task.name
+    const tasks = JSON.parse(localStorage.getItem('to_do_tasks'))
+    tasks.map((task) => {
 
-    const buttons = document.createElement("div")
-    buttons.classList.add("buttons")
+        const tasks_list = document.getElementById("tasks-list")
+        const newTask = document.createElement("li")
+        newTask.innerText = task.name
 
-    const remove = document.createElement("button")
-    remove.classList.add("remove")
+        if(task.status === 'ready')
+        newTask.classList.add('ready')
 
-    const complete = document.createElement("button")
-    complete.classList.add("complete")
+        const buttons = document.createElement("div")
+        buttons.classList.add("buttons")
 
-    buttons.appendChild(remove) // dodanie dziecka o klasie "remove" do rodzica "buttons"
-    buttons.appendChild(complete) // dodaje po kolei w odróżnieniu do "prepend"
-    newTask.appendChild(buttons)
-    tasks_list.prepend(newTask) // prepend dodaje dziecko zawsze na początku rodzica
+        const remove = document.createElement("button")
+        remove.classList.add("remove")
 
-    console.log(tasks_list)
+        const complete = document.createElement("button")
+        complete.classList.add("complete")
+
+        buttons.appendChild(remove) // dodanie dziecka o klasie "remove" do rodzica "buttons"
+        buttons.appendChild(complete) // dodaje po kolei w odróżnieniu do "prepend"
+        newTask.appendChild(buttons)
+        tasks_list.prepend(newTask) // prepend dodaje dziecko zawsze na początku rodzica
+
+        console.log(tasks_list)
 })
+
+}
