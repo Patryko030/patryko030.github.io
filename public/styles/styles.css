@@ -1,0 +1,146 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter";
+	font-size: 22px;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 1.3px;
+}
+
+table {
+	/* text-align: center; */
+	color: #0066ff;
+	line-height: 200%;
+	width: 300px;
+	height: 200px;
+	border-top: 5px solid #283970;
+	font-weight: bold;
+}
+
+table th {
+	text-align: left;
+	color: #003380;
+}
+
+table caption {
+	font-size: 32px;
+	font-weight: 900;
+	color: #003380;
+	text-align: center;
+}
+
+h1 {
+	color: #003380;
+}
+
+h3 {
+	color: #0066ff;
+	font-size: 36px;
+	font-weight: 900;
+	margin: 0;
+}
+
+p {
+	color: #003380;
+	font-weight: bold;
+	margin: 0;
+}
+
+header a {
+	color: #0066ff;
+	font-weight: 900;
+	text-decoration: none;
+	align-self: center;
+	/* border-bottom: 1px solid #003380; */
+}
+
+a:hover {
+	color: #003380;
+}
+
+.sup_element {
+	color: red;
+}
+
+footer strong {
+	text-decoration: underline;
+}
+
+mark {
+	border-radius: 5px;
+}
+
+#main-content {
+	background-image: linear-gradient(#d5e6f5, #ebebeb);
+	padding: 20px;
+	display: flex;
+}
+
+article {
+	margin-bottom: 80px;
+}
+
+#articles {
+	flex-grow: 1;
+}
+
+#skills {
+	flex-grow: 1;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 25px;
+	background-image: linear-gradient(#ebebeb, #d5e6f5);
+	border-bottom: #003380 1px solid;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+	background-color: #d5e6f5;
+	border-top: 1px solid grey;
+	color: #283970;
+}
+
+footer p {
+	color: red;
+}
+
+@media screen and (min-width: 600px) {
+	footer {
+		position: fixed;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#main-content,
+	header {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	#skills {
+		display: flex;
+		justify-content: center;
+		text-align: left;
+		padding-bottom: 80px;
+	}
+
+	h3 {
+		padding-bottom: 25px;
+	}
+
+	header a {
+		padding-bottom: 25px;
+	}
+}
