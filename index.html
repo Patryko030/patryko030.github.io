@@ -7,18 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first website</title>
     <link rel="stylesheet" href="/public/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/08c58a25de.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav class="navigation">
-            <a class="nav-button home-page" href="/index.html">Home</a>
-            <a class="nav-button first-page" href="/to-do-app/to-do-app.html">To Do
-                App</a>
-            <a class="nav-button second-page" href="/second-page.html">Link to second
-                page</a>
-            <a class="nav-button third-page " href="/third-page.html">Link to third page</a>
+            <ul>
+                <li><a class="nav-button home-page" href="/index.html">Home</a></li>
+                <li><a class="nav-button first-page" href="/to-do-app/to-do-app.html">To Do
+                        App</a></li>
+                <li><a class="nav-button second-page" href="/second-page.html">Link to second
+                        page</a></li>
+                <li><a class="nav-button third-page " href="/third-page.html">Link to third page</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -27,30 +30,34 @@
     <section class="jumbotron">
         <div class="jumbo-text">
             <h1>Welcome to my first website</h1>
+            <h2>Still in progress...</h2>
         </div>
         <!-- <a href="#"></a> -->
     </section>
+
+    <!-- SKILLS -->
+
     <section class="flex-container">
-        <div class="column">
+        <article class="column">
             <img src="/public/img/icons/icons8-html-5.svg" alt="HTML Icon">
             <h2>HTML</h2>
             <p>Znam HTML w stopniu dobrym, nie ograniczam się do podstaw, wciąż odkrywam nowe znaczniki, które są
                 przyjazne również dla osób, które wymagają specjalnych urządzeń/oprogramowania do obsługi stron
                 internetowych.</p>
-        </div>
-        <div class="column">
+        </article>
+        <article class="column">
             <img src="/public/img/icons/icons8-css3.svg" alt="CSS Icon">
             <h2>CSS</h2>
             <p>Podobnie jak w przypadku HTML, wciąż się poznajemy, odkrywam nowe możliwości jakie daje CSS, a jest ich
                 naprawdę wiele. Staram się tworzyć w pełni responsywne strony, znam Flexboxa a aktualnie uczę się CSS
                 Grid. Możliwości są ogromne, ale najważniejsze aby wciąż się rozwijać. </p>
-        </div>
-        <div class="column">
+        </article>
+        <article class="column">
             <img src="/public/img/icons/javascript.svg" alt="JavaScript Icon">
             <h2>JavaScript</h2>
             <p>W tej kwestii dużo nie opowiem, uczę się podstaw, mam nadzieję, że niedługo będę mógł się pochwalić
                 samodzielnie wykonanym projektem w JS ;) </p>
-        </div>
+        </article>
         <div class="column git">
             <img src="/public/img/icons/icons8-git.svg" alt="Git Icon">
             <h2>Git</h2>
@@ -58,6 +65,47 @@
             <a href="https://github.com/Patryko030" target="_blank">GitHub Link</a>
         </div>
     </section>
+
+    <section>
+        <div class="about">
+            <img src="/public/img/avatar2.jpg" alt="Awatar" srcset="">
+            <div class="about-text">
+                <h2>Kilka słów o mnie</h2>
+                <p>Lubię brnąć przed siebie, zamiast stawiać granice, wolę wyznaczać sobie kolejne cele. Sumiennie
+                    wykonuje
+                    swoje obowiązki, potrafię samodzielnie radzić sobie z napotkanymi trudnościami, a dotychczasowo
+                    obejmowane przeze mnie stanowiska pozwoliły mi nabyć umiejętność sprawnego połączenia sprzedaży
+                    produktów i usług oraz ukształtowały we mnie umiejętność pracy w zespole, która pozytywnie wpływa na
+                    swobodę pracy w firmie, której specyfika działania wymaga kontaktów z innymi działami firmy lub
+                    osobami.
+                    Równie dobrze odnajduję się w pracy, która wymaga szybkiego podjęcia decyzji i wdrożeniu
+                    odpowiednich
+                    działań. Motywuje mnie widok efektów mojej pracy, to że mam na nią realny wpływ, a praca i rozwój w
+                    branży IT to cel, którego osiągnięcie jest dla mnie priorytetem<span>- bo najlepsza praca to ta, do
+                        której wstaję z przyjemnością, nie z przymusu ;)</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+
+    <div class="certificates">
+        <h2>My Certificates</h2>
+        <section class="grid-container">
+            <div class="grid-item item1">1</div>
+            <div class="grid-item item2">2</div>
+            <div class="grid-item item3">3</div>
+            <div class="grid-item item4">4</div>
+            <div class="grid-item item5">5</div>
+            <div class="grid-item item6">6</div>
+            <div class="grid-item item7">7</div>
+            <div class="grid-item item8">8</div>
+            <div class="grid-item item9">9</div>
+        </section>
+    </div>
+
+    <!-- FOOTER  -->
+
     <footer>
         <div class="main-content">
             <div class="left box">
