@@ -7,105 +7,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first website</title>
     <link rel="stylesheet" href="/public/styles/style.css">
+    <link rel="stylesheet" href="/public/styles/utilities.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/08c58a25de.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <nav class="navigation">
-            <ul>
-                <li><a class="nav-button home-page" href="/index.html">Home</a></li>
-                <li><a class="nav-button first-page" href="/to-do-app/to-do-app.html">To Do
-                        App</a></li>
-                <li><a class="nav-button second-page" href="/second-page.html">Link to second
-                        page</a></li>
-                <li><a class="nav-button third-page " href="/third-page.html">Link to third page</a></li>
-            </ul>
-        </nav>
+        <div class="container flex">
+            <h1 class="logo">MOJE LOGO</h1>
+            <nav class="header-navigation">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/to-do-app/to-do-app.html">To Do
+                            App</a></li>
+                    <li><a href="/second-page.html">O mnie</a></li>
+                    <li><a href="/third-page.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
 
-    <!-- JUMBOTRON -->
-
-    <section class="jumbotron">
-        <div class="jumbo-text">
-            <h1>Welcome to my first website</h1>
-            <h2>Still in progress...</h2>
-        </div>
-        <!-- <a href="#"></a> -->
-    </section>
-
-    <!-- SKILLS -->
-
-    <section class="flex-container">
-        <article class="column">
-            <img src="/public/img/icons/icons8-html-5.svg" alt="HTML Icon">
-            <h2>HTML</h2>
-            <p>Znam HTML w stopniu dobrym, nie ograniczam się do podstaw, wciąż odkrywam nowe znaczniki, które są
-                przyjazne również dla osób, które wymagają specjalnych urządzeń/oprogramowania do obsługi stron
-                internetowych.</p>
-        </article>
-        <article class="column">
-            <img src="/public/img/icons/icons8-css3.svg" alt="CSS Icon">
-            <h2>CSS</h2>
-            <p>Podobnie jak w przypadku HTML, wciąż się poznajemy, odkrywam nowe możliwości jakie daje CSS, a jest ich
-                naprawdę wiele. Staram się tworzyć w pełni responsywne strony, znam Flexboxa a aktualnie uczę się CSS
-                Grid. Możliwości są ogromne, ale najważniejsze aby wciąż się rozwijać. </p>
-        </article>
-        <article class="column">
-            <img src="/public/img/icons/javascript.svg" alt="JavaScript Icon">
-            <h2>JavaScript</h2>
-            <p>W tej kwestii dużo nie opowiem, uczę się podstaw, mam nadzieję, że niedługo będę mógł się pochwalić
-                samodzielnie wykonanym projektem w JS ;) </p>
-        </article>
-        <div class="column git">
-            <img src="/public/img/icons/icons8-git.svg" alt="Git Icon">
-            <h2>Git</h2>
-            <p>Znam podstawy systemu kontroli wersji, zapraszam serdecznie do mojego profilu na stronie GitHub.</p>
-            <a href="https://github.com/Patryko030" target="_blank">GitHub Link</a>
-        </div>
-    </section>
-
-    <section>
-        <div class="about">
-            <img src="/public/img/avatar2.jpg" alt="Awatar" srcset="">
-            <div class="about-text">
-                <h2>Kilka słów o mnie</h2>
-                <p>Lubię brnąć przed siebie, zamiast stawiać granice, wolę wyznaczać sobie kolejne cele. Sumiennie
-                    wykonuje
-                    swoje obowiązki, potrafię samodzielnie radzić sobie z napotkanymi trudnościami, a dotychczasowo
-                    obejmowane przeze mnie stanowiska pozwoliły mi nabyć umiejętność sprawnego połączenia sprzedaży
-                    produktów i usług oraz ukształtowały we mnie umiejętność pracy w zespole, która pozytywnie wpływa na
-                    swobodę pracy w firmie, której specyfika działania wymaga kontaktów z innymi działami firmy lub
-                    osobami.
-                    Równie dobrze odnajduję się w pracy, która wymaga szybkiego podjęcia decyzji i wdrożeniu
-                    odpowiednich
-                    działań. Motywuje mnie widok efektów mojej pracy, to że mam na nią realny wpływ, a praca i rozwój w
-                    branży IT to cel, którego osiągnięcie jest dla mnie priorytetem<span>- bo najlepsza praca to ta, do
-                        której wstaję z przyjemnością, nie z przymusu ;)</span></p>
+    <!-- SHOWCASE -->
+    <main>
+        <section>
+            <div class="container grid">
+                <div class="showcase-text">
+                    <h1>Witaj na mojej pierwszej stronie internetowej</h1>
+                    <p>Lorem ipsum dolor sit amet.
+                        Dolor dolore odit odio rerum.
+                        Totam voluptatum dicta reprehenderit. Iste.
+                        Ex nemo rem possimus assumenda?
+                        Asperiores ab eveniet eaque optio.
+                        Voluptates hic ab ipsa at.
+                        Fugit reprehenderit molestias ut veritatis!
+                        Dignissimos ratione amet officiis reprehenderit!
+                        Cupiditate itaque et sequi laborum!
+                        Vero aliquid officiis nobis officia!</p>
+                </div>
+                <img src="/public/img/showcase_img.png" alt="showcase image">
             </div>
-        </div>
-    </section>
-
-    <!-- CERTIFICATES -->
-
-    <div class="certificates">
-        <h2>My Certificates</h2>
-        <section class="grid-container">
-            <div class="grid-item item1">1</div>
-            <div class="grid-item item2">2</div>
-            <div class="grid-item item3">3</div>
-            <div class="grid-item item4">4</div>
-            <div class="grid-item item5">5</div>
-            <div class="grid-item item6">6</div>
-            <div class="grid-item item7">7</div>
-            <div class="grid-item item8">8</div>
-            <div class="grid-item item9">9</div>
         </section>
-    </div>
 
-    <!-- FOOTER  -->
+        <!-- SKILLS -->
 
+        <section class="container flex-container">
+            <article class="column column--light">
+                <img src="/public/img/icons/icons8-html-5.svg" alt="HTML Icon">
+                <h2>HTML</h2>
+                <p>Lorem ipsum dolor sit amet.
+                    Aperiam, eaque? Nulla, dolore iste.
+                    Debitis vel dignissimos reiciendis quaerat.
+                    Placeat minima recusandae repudiandae! Cupiditate?
+                    Error quos dicta aliquid temporibus?
+                    Odio culpa delectus adipisci vero!
+                    Voluptatum mollitia quod illum tenetur.
+                    Dolore totam quibusdam suscipit necessitatibus?</p>
+            </article>
+            <article class="column column--dark">
+                <img src="/public/img/icons/icons8-css3.svg" alt="CSS Icon">
+                <h2>CSS</h2>
+                <p>Lorem ipsum dolor sit amet.
+                    Aperiam, eaque? Nulla, dolore iste.
+                    Debitis vel dignissimos reiciendis quaerat.
+                    Placeat minima recusandae repudiandae! Cupiditate?
+                    Error quos dicta aliquid temporibus?
+                    Odio culpa delectus adipisci vero!
+                    Voluptatum mollitia quod illum tenetur.
+                    Dolore totam quibusdam suscipit necessitatibus?</p>
+            </article>
+            <article class="column column--darker">
+                <img src="/public/img/icons/javascript.svg" alt="JavaScript Icon">
+                <h2>JavaScript</h2>
+                <p>Lorem ipsum dolor sit amet.
+                    Aperiam, eaque? Nulla, dolore iste.
+                    Debitis vel dignissimos reiciendis quaerat.
+                    Placeat minima recusandae repudiandae! Cupiditate?
+                    Error quos dicta aliquid temporibus?
+                    Odio culpa delectus adipisci vero!
+                    Voluptatum mollitia quod illum tenetur.
+                    Dolore totam quibusdam suscipit necessitatibus?</p>
+            </article>
+
+        </section>
+
+        <section>
+            <div class="about">
+                <div class="avatar"><img src="/public/img/avatar2.jpg" alt="Awatar" srcset=""></div>
+                <div class="about-text">
+                    <h2>Kilka słów o mnie</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, vel!
+                        Tenetur temporibus atque totam doloribus qui enim amet. Officia, repudiandae?
+                        Error maiores modi pariatur iste, eaque quidem est earum totam?
+                        Autem repellat dolores ratione dolorem! Eum consectetur magni minus! Dolore.
+                        Natus dolorem laudantium expedita voluptatum consequatur. Cum est dolor non.
+                        Repellendus, accusantium. Veritatis expedita consequatur beatae maxime debitis recusandae
+                        perferendis!
+                        Non id similique at sint aliquid quasi rerum iste! Soluta!
+                        Id, ad sapiente vitae sit beatae dicta repellat! Fugiat, et.
+                        Magnam id, delectus laborum eius quas nihil alias odio voluptas!
+                        Doloribus exercitationem quo corrupti recusandae, repudiandae nihil dolores accusamus
+                        quaerat?</span></p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- CERTIFICATES -->
+
+        <div class="certificates">
+            <h2>My Certificates</h2>
+            <section class="grid-container">
+                <div class="grid-item item1"><a
+                        href="https://codenga.pl/p/certificate/hash/mfsgjv07e1w48okok888g84k8kcko0k"
+                        target="_blank"><img src="/public/img/HTML/Fundamenty-HTML-Lv1.jpg"
+                            alt="Certyfikat Codenga Fundamenty HTML Lvl 1" srcset="" class="center"></a></div>
+                <div class="grid-item item2"><a
+                        href="https://codenga.pl/p/certificate/hash/bjr14rkg61skgc8g0kcso0w8sko0008"
+                        target="_blank"><img src="/public/img/HTML/Fundamenty-HTML-Lv2.jpg"
+                            alt="Certyfikat Codenga Fundamenty HTML Lvl 2" srcset="" class="center"></a></div>
+                <div class="grid-item item3"><a
+                        href="https://codenga.pl/p/certificate/hash/fi8q0hv2wls880c80ckk0ssooso4ws4"
+                        target="_blank"><img src="/public/img/HTML/Fundamenty-HTML-Lv3.jpg"
+                            alt="Certyfikat Codenga Fundamenty HTML Lvl 3" srcset="" class="center"></a></div>
+                <div class="grid-item item4"><a
+                        href="https://codenga.pl/p/certificate/hash/jk3ih7vnl8o44oogsocgwk4wookw44" target="_blank"><img
+                            src="/public/img/HTML/Fundamenty-HTML-cwiczenia.jpg"
+                            alt="Certyfikat Codenga Fundamenty HTML - ćwiczenia" srcset="" class="center"></a></div>
+                <div class="grid-item item5"><a
+                        href="https://codenga.pl/p/certificate/hash/jp9rgka4sdko0w8goss8soscs4soskw"
+                        target="_blank"><img src="/public/img/HTML/Warsztaty.jpg"
+                            alt="Certyfikat Codenga Warsztaty tworzenia stron - nowe podejście" srcset=""
+                            class="center"></a>
+                </div>
+                <div class="grid-item item6"><a
+                        href="https://codenga.pl/p/certificate/hash/jsnhipmiufk88socg8wksoo84oo4cs0"
+                        target="_blank"><img src="/public/img/CSS/Fundamenty-CSS-Lv1.jpg"
+                            alt="Certyfikat Codenga Fundamenty CSS - Lvl 1" srcset="" class="center"></a></div>
+                <div class="grid-item item7"><a
+                        href="https://codenga.pl/p/certificate/hash/atojm01l9y8gw4o0cwww0g88s4s84gs"
+                        target="_blank"><img src="/public/img/CSS/Fundamenty-CSS-Lv2.jpg"
+                            alt="Certyfikat Codenga Fundamenty CSS - Lvl 2" srcset="" class="center"></a></div>
+                <div class="grid-item item8"><a
+                        href="https://codenga.pl/p/certificate/hash/f2k5zjyd1bwc4w8os0ok0wgcgo4c4go"
+                        target="_blank"><img src="/public/img/CSS/Fundamenty-CSS-Lv3.jpg"
+                            alt="Certyfikat Codenga Fundamenty CSS - ćwiczenia" srcset="" class="center"></a></div>
+                <div class="grid-item item9"><a
+                        href="platforma.strefakursow.pl/p/certificate/hash/r3hc1dpt5r4koskkggcwk0wwss0c4ww"
+                        target="_blank"><img src="/public/img/CSS/Fundamenty-CSS-stylowanie-stron-od-podstaw.jpg"
+                            alt="Certyfikat StrefaKursów Fundamenty CSS stylowanie stron od podstaw" srcset=""
+                            class="center"></a>
+                </div>
+            </section>
+        </div>
+
+        <!-- FOOTER  -->
+    </main>
     <footer>
         <div class="main-content">
             <div class="left box">
