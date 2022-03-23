@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Poppins&family=Roboto&display=swap");
+:root {
+	--headerbg: #e5e5e5;
+	--abooutbg: #eeeeee;
+	--secondarycolor: #1089ff;
+	--primarycolor: #23374d;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--abooutbg);
+	font-family: "Poppins", sans-serif;
+	line-height: 1.6;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+p,
+a,
+div {
+	font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 700;
+	line-height: 1.2;
+	margin: 10px 0;
+}
+
+img {
+	width: 100%;
+}
+
+/* HEADER */
+
+header {
+	background-color: var(--headerbg);
+	color: var(--primarycolor);
+}
+
+header .text-xl {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 900;
+	font-size: 70px;
+}
+
+header .text-sm {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+}
+
+header .person {
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left: 150px;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+.header-navigation {
+	background-color: var(--primarycolor);
+	width: 60%;
+	margin: 50px 0 0 150px;
+	border-radius: 5px;
+}
+
+.header-navigation ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 15px 0;
+	text-align: center;
+}
+
+.header-navigation li {
+	border-right: 2px solid #fff;
+	width: 20%;
+}
+
+.header-navigation li:last-child {
+	border-right: none;
+}
+
+.header-navigation a {
+	transition: 0.2s;
+	color: var(--headerbg);
+}
+
+.header-navigation a:hover {
+	color: var(--secondarycolor);
+}
+
+/* ABOUT */
+
+.about {
+	background-color: var(--abooutbg);
+	color: var(--primarycolor);
+	width: 100%;
+}
+
+.about-contact {
+	margin-left: 150px;
+}
+.contact {
+	padding-left: 10px;
+	width: 30%;
+}
+
+.social {
+	display: flex;
+	justify-content: left;
+}
+
+.social a {
+	width: 30px;
+	height: 30px;
+	color: var(--headerbg);
+	line-height: 30px;
+	text-align: center;
+	margin: 15px 20px 15px 0;
+	border-radius: 5px;
+}
+
+.social .facebook {
+	background-color: #4267b2;
+	transition: 0.3s;
+}
+.social .facebook:hover {
+	background-color: #fff;
+	color: #4267b2;
+}
+.social .twitter {
+	background-color: #1da1f2;
+	transition: 0.3s;
+}
+.social .twitter:hover {
+	background-color: #fff;
+	color: #1da1f2;
+}
+.social .linkedin {
+	background-color: #0077b5;
+	transition: 0.3s;
+}
+.social .linkedin:hover {
+	background-color: #fff;
+	color: #0077b5;
+}
+.social .github {
+	background-color: #171515;
+	transition: 0.3s;
+}
+.social .github:hover {
+	background-color: #fff;
+	color: #171515;
+}
+
+.about-me {
+	align-items: stretch;
+	width: 70%;
+	border-top: 3px solid #39a2db;
+	border-bottom: 3px solid #39a2db;
+}
+
+.avatar img {
+	border-right: 5px solid #39a2db;
+	object-position: center;
+}
+
+.about-me-text {
+	padding: 25px 25px;
+}
+
+/* SKILLS */
+
+.container.circle-skills {
+	background-color: var(--abooutbg);
+	padding-top: 0;
+}

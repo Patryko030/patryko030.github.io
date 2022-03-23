@@ -12,24 +12,27 @@
 </head>
 
 <body>
-    <header>
-        <div class="navigation">
-            <a class="nav-button home-page" href="/index.html">Home</a>
-            <a class="nav-button first-page" href="/to-do-app/to-do-app.html">Link to To DO App page</a>
-            <a class="nav-button second-page" href="/second-page.html">Link to second page</a>
-            <a class="nav-button third-page " href="/third-page.html">Link to third page</a>
+    <header class="container">
+        <div class="flex person">
+            <h1 class="text-xl">Bąbalicki Patryk</h1>
+            <p class="text-sm">Moja internetowa wizytówka</p>
         </div>
+        <nav class="header-navigation">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            <div class="container flex person">
-                <h1>Bąbalicki Patryk</h1>
-                <p class="text-lg">Moja internetowa wizytówka</p>
+        <section class="container about">
+            <div class="title-diamond">
+                <h2 class="title-text text-md">About Me</h2>
             </div>
-        </section>
-        <section>
-            <h2 class="title-text text-xl">About Me</h2>
-            <div class="container flex about">
+            <div class="flex about-contact">
                 <div class="contact">
                     <div class="birth">
                         <span class="bold-sm text-sm">Birth</span>
@@ -44,20 +47,21 @@
                         <span class="about-text text-sm">babalickipatryk@gmail.com</span>
                     </div>
                     <div class="social">
-                        <a href="https://www.facebook.com/Patryko030" target="_blank"><span
+                        <a href="https://www.facebook.com/Patryko030" target="_blank" class="facebook"><span
                                 class="fab fa-facebook-f"></span></a>
-                        <a href="#"><span class="fab fa-twitter"></span></a>
-                        <a href="https://www.linkedin.com/in/patryk-babalicki/" target="_blank"><span
+                        <a href="#" class="twitter"><span class="fab fa-twitter"></span></a>
+                        <a href="https://www.linkedin.com/in/patryk-babalicki/" target="_blank" class="linkedin"><span
                                 class="fab fa-linkedin"></span></a>
-                        <a href="https://github.com/Patryko030" target="_blank"><span class="fab fa-github"></span></a>
+                        <a href="https://github.com/Patryko030" target="_blank" class="github"><span
+                                class="fab fa-github"></span></a>
                     </div>
                 </div>
                 <div class="flex about-me">
                     <div class="avatar">
                         <img src="/public/img/avatar2.jpg" alt="Awatar">
                     </div>
-                    <div class="about-me-text text-md">
-                        <p>Lorem ipsum dolor sit amet.
+                    <div>
+                        <p class="about-me-text text-sm">Lorem ipsum dolor sit amet.
                             Explicabo molestiae voluptatem cum ad.
                             Molestias aliquam odio quidem autem.
                             Non doloribus soluta debitis corporis?
@@ -71,26 +75,28 @@
                 </div>
             </div>
         </section>
-        <section>
-            <h2 class="title-text text-xl">Skills</h2>
-            <div class="container flex skills">
-                <div class="html">
-                    <p class="text-sm">HTML</p>
+        <section class="container circle-skills">
+            <div class="title-diamond">
+                <h2 class="title-text text-md">Skills</h2>
+            </div>
+            <div class="flex skills">
+                <div class="html circle">
+                    <p class="text-sm">60%</p>
                 </div>
-                <div class="css">
-                    <p class="text-sm">CSS</p>
+                <div class="css circle">
+                    <p class="text-sm">60%</p>
                 </div>
-                <div class="git">
-                    <p class="text-sm">GIT</p>
+                <div class="js circle">
+                    <p class="text-sm">60%</p>
                 </div>
-                <div class="git">
-                    <p class="text-sm">JavaScript</p>
+                <div class="git circle">
+                    <p class="text-sm">60%</p>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="container">
             <h2 class="eduexp-title text-lg">Experience and Education</h2>
-            <div class="container flex eduexp">
+            <div class="flex eduexp">
                 <div class="experience">
                     <h3 class="eduexp-text text-md">Experience</h3>
                     <article>
@@ -128,10 +134,44 @@
                             suscipit totam laboriosam deleniti! Ea aut vitae nobis.
                         </p>
                     </article>
-
                 </div>
                 <div class="education">
                     <h3 class="eduexp-text text-md">Education</h3>
+                    <article>
+                        <h4>First Education <span class="interval">2000 - 2010</span></h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis non officia
+                            provident deserunt eos repudiandae eius aperiam error similique omnis corporis dicta,
+                            suscipit totam laboriosam deleniti! Ea aut vitae nobis.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>Second Education <span class="interval">2000 - 2010</span></h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis non officia
+                            provident deserunt eos repudiandae eius aperiam error similique omnis corporis dicta,
+                            suscipit totam laboriosam deleniti! Ea aut vitae nobis.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>Third Education <span class="interval">2000 - 2010</span></h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis non officia
+                            provident deserunt eos repudiandae eius aperiam error similique omnis corporis dicta,
+                            suscipit totam laboriosam deleniti! Ea aut vitae nobis.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>Fourth Education <span class="interval">2000 - 2010</span></h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis non officia
+                            provident deserunt eos repudiandae eius aperiam error similique omnis corporis dicta,
+                            suscipit totam laboriosam deleniti! Ea aut vitae nobis.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>Fifth Education <span class="interval">2000 - 2010</span></h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis non officia
+                            provident deserunt eos repudiandae eius aperiam error similique omnis corporis dicta,
+                            suscipit totam laboriosam deleniti! Ea aut vitae nobis.
+                        </p>
+                    </article>
                 </div>
             </div>
         </section>

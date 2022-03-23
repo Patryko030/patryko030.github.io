@@ -1,0 +1,114 @@
+:root {
+	--headerbg: #e5e5e5;
+	--abooutbg: #eeeeee;
+	--secondarycolor: #1089ff;
+	--primarycolor: #23374d;
+}
+
+/* LAYOUT */
+
+.container {
+	margin: 0 auto;
+	padding: 25px 40px;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+/* TITTLES DIAMOND */
+
+.title-diamond {
+	background-color: var(--primarycolor);
+	margin-left: 150px;
+	width: 20%;
+	text-align: left;
+	padding-left: 10px;
+	transform: skew(-30deg);
+}
+
+.title-text {
+	transform: skew(30deg);
+	text-transform: uppercase;
+	color: var(--abooutbg);
+	font-weight: 400;
+}
+
+/* CIRCLE */
+
+.skills {
+	justify-content: space-evenly;
+}
+.circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	width: 150px;
+	height: 150px;
+	border-style: solid;
+	border-width: 15px;
+	border-image-slice: 1;
+	border-image: linear-gradient(red, purple);
+	/* border-radius: 50%; */
+}
+
+/* TEXT */
+.text-sm {
+	font-size: 1rem;
+}
+.text-md {
+	font-size: 2rem;
+}
+.text-lg {
+	font-size: 2.5rem;
+}
+.text-xl {
+	font-size: 3rem;
+}
+.bold-sm {
+	font-weight: 700;
+}
+
+/* SPACING */
+
+.m-1 {
+	margin: 1rem;
+}
+.m-2 {
+	margin: 1.5rem;
+}
+.my-1 {
+	margin: 1rem 0;
+}
+.my-2 {
+	margin: 1.5rem 0;
+}
+.mx-1 {
+	margin: 0 1rem;
+}
+.mx-2 {
+	margin: 0 1.5rem;
+}
+
+.p-1 {
+	padding: 1rem;
+}
+.p-2 {
+	padding: 1.5rem;
+}
+.py-1 {
+	padding: 1rem 0;
+}
+.py-2 {
+	padding: 1.5rem 0;
+}
+.px-1 {
+	padding: 0 1rem;
+}
+.px-2 {
+	padding: 0 1.5rem;
+}
