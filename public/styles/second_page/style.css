@@ -84,10 +84,12 @@ header .person {
 	align-items: center;
 	padding: 15px 0;
 	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
 }
 
 .header-navigation li {
-	border-right: 2px solid #fff;
+	border-right: 2px solid var(--abooutbg);
 	width: 20%;
 }
 
@@ -97,7 +99,7 @@ header .person {
 
 .header-navigation a {
 	transition: 0.2s;
-	color: var(--headerbg);
+	color: var(--abooutbg);
 }
 
 .header-navigation a:hover {
@@ -112,17 +114,27 @@ header .person {
 	width: 100%;
 }
 
+.container.about {
+	padding-right: 0;
+}
+
 .about-contact {
 	margin-left: 150px;
 }
 .contact {
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
 	padding-left: 10px;
+	padding-top: 10px;
 	width: 30%;
+	position: relative;
 }
 
 .social {
 	display: flex;
-	justify-content: left;
+	position: absolute;
+	bottom: 0;
 }
 
 .social a {
@@ -131,7 +143,7 @@ header .person {
 	color: var(--headerbg);
 	line-height: 30px;
 	text-align: center;
-	margin: 15px 20px 15px 0;
+	margin: 0 20px 0 0;
 	border-radius: 5px;
 }
 
@@ -171,22 +183,80 @@ header .person {
 .about-me {
 	align-items: stretch;
 	width: 70%;
-	border-top: 3px solid #39a2db;
-	border-bottom: 3px solid #39a2db;
+	padding-top: 10px;
 }
 
-.avatar img {
-	border-right: 5px solid #39a2db;
-	object-position: center;
-}
-
-.about-me-text {
-	padding: 25px 25px;
+.about-me img {
+	margin-right: 25px;
 }
 
 /* SKILLS */
 
-.container.circle-skills {
-	background-color: var(--abooutbg);
-	padding-top: 0;
+.skills {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.circle-skills p {
+	text-align: center;
+	color: var(--secondarycolor);
+}
+
+/* EDUEXP */
+
+.eduexp-container {
+	background-color: var(--primarycolor);
+	color: var(--abooutbg);
+	display: flex;
+	flex-direction: column;
+}
+
+.eduexp-title {
+	text-align: right;
+	text-transform: uppercase;
+	position: relative;
+	padding-bottom: 5px;
+}
+.eduexp-title:after {
+	content: "";
+	background: linear-gradient(to left, #1089ff, rgba(0, 0, 0, 0));
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 2px;
+	width: 80%;
+}
+
+.eduexp-text {
+	background: var(--secondarycolor);
+	width: 20%;
+	text-align: center;
+	padding: 3px 0;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.experience,
+.education {
+	margin-left: 150px;
+}
+.experience ul,
+.education ul {
+	list-style-type: disc;
+}
+
+.experience h4,
+.education h4 {
+	position: relative;
+}
+.experience .interval,
+.education .interval {
+	background: var(--secondarycolor);
+	padding: 3px 10px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 0;
+	right: 65%;
 }

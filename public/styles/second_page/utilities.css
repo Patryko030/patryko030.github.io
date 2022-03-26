@@ -9,7 +9,7 @@
 
 .container {
 	margin: 0 auto;
-	padding: 25px 40px;
+	padding: 10px 40px;
 }
 
 .flex {
@@ -22,9 +22,10 @@
 /* TITTLES DIAMOND */
 
 .title-diamond {
-	background-color: var(--primarycolor);
+	background-image: linear-gradient(to right, #23374d, rgba(0, 0, 0, 1));
+	background-size: 20%;
+	background-repeat: no-repeat;
 	margin-left: 150px;
-	width: 20%;
 	text-align: left;
 	padding-left: 10px;
 	transform: skew(-30deg);
@@ -35,25 +36,41 @@
 	text-transform: uppercase;
 	color: var(--abooutbg);
 	font-weight: 400;
+	position: relative;
+}
+
+.title-text:after {
+	content: "";
+	background: linear-gradient(to left, #1089ff, rgba(0, 0, 0, 0));
+	position: absolute;
+	top: 50%;
+	right: 0;
+	height: 2px;
+	width: 80%;
 }
 
 /* CIRCLE */
 
-.skills {
-	justify-content: space-evenly;
-}
-.circle {
+.circle-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 50px;
-	width: 150px;
-	height: 150px;
-	border-style: solid;
-	border-width: 15px;
-	border-image-slice: 1;
-	border-image: linear-gradient(red, purple);
-	/* border-radius: 50%; */
+	background: -webkit-linear-gradient(bottom right, #1089ff 0%, #eeeeee 100%);
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+}
+.container.circle-skills {
+	padding-right: 0;
+}
+
+.circle-container .circle {
+	background-color: var(--abooutbg);
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 200px;
 }
 
 /* TEXT */
