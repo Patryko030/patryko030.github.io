@@ -125,13 +125,13 @@ header .person {
 	display: flex;
 	flex-direction: column;
 	align-self: stretch;
+	position: relative;
 	padding-left: 10px;
 	padding-top: 10px;
 	width: 30%;
-	position: relative;
 }
 
-.social {
+.contact div:nth-child(4) {
 	display: flex;
 	position: absolute;
 	bottom: 0;
@@ -259,4 +259,133 @@ header .person {
 	position: absolute;
 	bottom: 0;
 	right: 65%;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: var(--primarycolor);
+	color: var(--headerbg);
+	width: 100%;
+	position: relative;
+}
+footer:after {
+	position: absolute;
+	content: "";
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(16, 137, 255, 1) 50%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	top: 0;
+	left: 0;
+	height: 2px;
+	width: 100%;
+}
+
+.main-content {
+	display: flex;
+}
+
+.main-content .box {
+	flex-basis: 50%;
+	padding: 10px 25px;
+}
+.footer-title {
+	position: relative;
+}
+.footer-title:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	/* background-color: var(--headerbg); */
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(16, 137, 255, 1) 50%,
+		rgba(0, 0, 0, 0) 80%
+	);
+	bottom: -5px;
+	left: 0;
+}
+.footer-title:after {
+	content: "";
+	position: absolute;
+	width: 40%;
+	height: 4px;
+	background-color: var(--headerbg);
+	bottom: -5px;
+	left: 0;
+}
+
+.left {
+	position: relative;
+}
+
+.social {
+	display: flex;
+	position: absolute;
+	bottom: 25px;
+}
+
+.center .content span:last-child {
+	font-size: 20px;
+}
+.center .content span:first-child {
+	font-size: 20px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: var(--headerbg);
+	color: var(--primarycolor);
+	transition: 0.2s;
+}
+.center .content span:first-child:hover {
+	color: var(--headerbg);
+	background-color: var(--primarycolor);
+}
+
+.right .content form input,
+.right .content form textarea {
+	width: 100%;
+	background-color: var(--headerbg);
+	border: 1px solid var(--secondarycolor);
+}
+.right .content form .email div,
+.right .content form .msg div {
+	margin-bottom: 5px;
+}
+.right .content form input {
+	height: 35px;
+}
+.right .content form button {
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+	color: var(--headerbg);
+	background-color: var(--secondarycolor);
+	transition: 0.3s;
+}
+.right .content form button:hover {
+	color: var(--primarycolor);
+	background-color: var(--headerbg);
+}
+.bottom {
+	text-align: center;
+	background-color: var(--secondarycolor);
+	padding: 5px;
+}
+.bottom a {
+	color: var(--primarycolor);
+	text-decoration: none;
+}
+.bottom a:hover {
+	text-decoration: underline;
 }
